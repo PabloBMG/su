@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Panel de Administración"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        />
+
+    <EditText
+        android:id="@+id/intervaloInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Intervalo en minutos"
+        android:inputType="number"
+        />
+
+    <Button
+        android:id="@+id/btnGuardarIntervalo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Intervalo"
+        android:layout_marginTop="12dp"
+        />
+
+    <Button
+        android:id="@+id/btnVerLogs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Logs"
+        android:layout_marginTop="20dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:background="#f0f0f0">
+
+        <TextView
+            android:id="@+id/textLogs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aquí se mostrarán los logs"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:scrollbars="vertical" />
+    </ScrollView>
+
+</LinearLayout>
